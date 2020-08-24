@@ -1,0 +1,56 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="mmqOWOb.G*/~ksX6Grly">Player</variable><variable type="KIND_SpriteKind" id="y?2G-kx|.5h3J~Ra._+K">Projectile</variable><variable type="KIND_SpriteKind" id="VPT;0j:;[/FJ*UlNPP_Z">Food</variable><variable type="KIND_SpriteKind" id="QA8pb$qp2h`jZCSr)-?!">Enemy</variable><variable id="NS;.RNe/:lWgE7vO(@+9">mySprite</variable><variable id="Nu]8(O)U$Hb+[zO66GT.">mySprite2</variable><variable id="eh@,PZqN+S/bD4_Zo%%;">Billie</variable><variable id="$q.97C6e,Npcz/0M;s_`">Rosalia</variable><variable id="$#~SHUuF8;5:V.11Zyez">Karol G</variable></variables><block type="pxt-on-start" id="]Yyax)!KI[6N-OwRA$!_" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="Q{ukev{6E^~jLN$FtAv%"><field name="VAR" id="$q.97C6e,Npcz/0M;s_`">Rosalia</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="=GS(xJ0[n[rc7WA6o,:2"><value name="img"><shadow type="screen_image_picker" id="sQ]NMIDQu5b$iwdf_(W5"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . f f f . . . . . . . . 
+. . . . f f f f f . . . . . . . 
+. . . . f d d d f . . . . . . . 
+. . . f f d d d f f . . . . . . 
+. . . f f d d d f f . . . . . . 
+. . . f f . d . f f . . . . . . 
+. . . . d d d d d . . . . . . . 
+. . . . d 2 d 2 d . . . . . . . 
+. . . . d 2 2 2 d . . . . . . . 
+. . . . d 2 2 2 d . . . . . . . 
+. . . . d 2 2 2 d . . . . . . . 
+. . . . . 2 . 2 . . . . . . . . 
+. . . . . 2 . 2 . . . . . . . . 
+. . . . . f . f . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="txVIN$iJuQ=km[!FJv^o"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="wqs2N`WI@[eL`[@ss7gj"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="rB}HU`*Pha9zryoMmCb|"><field name="VAR" id="eh@,PZqN+S/bD4_Zo%%;">Billie</field></block></value><next><block type="variables_set" id="9]LdflJjZ,OqX@W-w%b$"><field name="VAR" id="eh@,PZqN+S/bD4_Zo%%;">Billie</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="L~1%|r_`rb=tr*w$4hSC"><value name="img"><shadow type="screen_image_picker" id="gB,Tw^+{poz=i.M}Bk7G"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . 7 7 7 . . . . . . . . 
+. . . . 7 7 7 7 7 . . . . . . . 
+. . . . f d d d f . . . . . . . 
+. . . . f d d d f . . . . . . . 
+. . . . f d d d f . . . . . . . 
+. . . . f f d f f . . . . . . . 
+. . . . 7 7 7 7 7 . . . . . . . 
+. . . . 7 7 7 7 7 . . . . . . . 
+. . . . 7 7 7 7 7 . . . . . . . 
+. . . . d f f f d . . . . . . . 
+. . . . . 7 . 7 . . . . . . . . 
+. . . . . 7 . 7 . . . . . . . . 
+. . . . . 1 . 1 . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="F*Np^EZqxmSG=w3MWR=l"><field name="MEMBER">Enemy</field></shadow></value></block></value><next><block type="variables_set" id="+A7M|I!?f:rP?~=t9Ap$"><field name="VAR" id="$#~SHUuF8;5:V.11Zyez">Karol G</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="Vq?1rVoXQXN=q7!nYcsn"><value name="img"><shadow type="screen_image_picker" id="e/rhcd1UWvOe)s*g!,$a"><field name="img">img`
+. . . . . . . . . . . . . . . . . . . . 
+. . . . . . . f f f . . . . . . . . . . 
+. . . . . . f f f f f . . . . . . . . . 
+. . . . . f f d d d f f . . . . . . . . 
+. . . . . f f d d d f f . . . . . . . . 
+. . . . . d b d d d b d . . . . . . . . 
+. . . . . c b b d b b c . . . . . . . . 
+. . . . . c c d d d c c . . . . . . . . 
+. . . . . . . c c c . . . . . . . . . . 
+. . . . . . . c c c . . . . . . . . . . 
+. . . . . . . d d d . . . . . . . . . . 
+. . . . . . . c c c . . . . . . . . . . 
+. . . . . . . c c c . . . . . . . . . . 
+. . . . . . . d . d . . . . . . . . . . 
+. . . . . . . c . c . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="~pN4AUP^D,AC$WM+IrP1"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos" id="0c6;B1AisjP]z4Ip11YF"><value name="sprite"><block type="variables_get" id="pAr-IC(PRZq^ujH8rj]9"><field name="VAR" id="$#~SHUuF8;5:V.11Zyez">Karol G</field></block></value><value name="x"><shadow type="positionPicker" id="/:wEc}TzfsJ0Lm{)kTc6"><field name="index">30</field></shadow></value><value name="y"><shadow type="positionPicker" id="zB*MXYGHCL[Le(%$p:NC"><field name="index">26</field></shadow></value><next><block type="spritesetpos" id="Yu**lc3ZttiI]YkCz/BX"><value name="sprite"><block type="variables_get" id="G997NH#3``mC6@IAB_?I"><field name="VAR" id="eh@,PZqN+S/bD4_Zo%%;">Billie</field></block></value><value name="x"><shadow type="positionPicker" id="`W(+h^kl#zB[65?RkcGn"><field name="index">70</field></shadow></value><value name="y"><shadow type="positionPicker" id="27R%I,RqTYIz?=flM1-e"><field name="index">83</field></shadow></value><next><block type="camerafollow" id="qY2w%C!]6fUPq9jcH32("><value name="sprite"><block type="variables_get" id="wz@*K..pYfj=o-U:pfnF"><field name="VAR" id="$q.97C6e,Npcz/0M;s_`">Rosalia</field></block></value><next><block type="gamesetbackgroundcolor" id="1GYQ.J`BE69Z62YSw6L4"><value name="color"><shadow type="colorindexpicker" id="E9F$tWG(TWdPqdk-X{@n"><field name="index">3</field></shadow></value><next><block type="particlesStartScreenAnimation" id="dWQP#%QlV4:h!FVC`q9a"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><field name="effect">effects.bubbles</field><value name="duration"><shadow type="timePicker" id="34WsfotL^;[RKdqR)QkP"><field name="ms">90000000</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
